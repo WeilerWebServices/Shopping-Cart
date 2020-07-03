@@ -1,32 +1,3 @@
-﻿using System.Linq;
-using InternationalCookies.Domain.Interfaces;
-using InternationalCookies.Domain.Model;
-using InternationalCookies.Domain.RepositoriesInterfaces;
-
-namespace InternationalCookies.Domain.Service
-{
-    public class ProductDomainService: IProductDomainService
-    {
-        private readonly IProductsRepository _productRepository;
-
-        public ProductDomainService(IProductsRepository productsRepository)
-        {
-            _productRepository = productsRepository;
-        }
-
-        public bool AddProduct(Product product)
-        {
-           return _productRepository.AddProduct(product);
-        }
-
-        public bool UpdateProduct(Product product)
-        {
-           return _productRepository.UpdateProduct(product);
-        }
-
-        IQueryable<Product> IProductDomainService.GetAllProducts()
-        {
-          return  _productRepository.GetAllProducts();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:78ddb0016c4a04dd6b0e3ec9db491b82dd4709d06832e6e3797c2b544410cc08
+size 909

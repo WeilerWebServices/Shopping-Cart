@@ -1,4 +1,3 @@
-vendor
-build/artifacts/
-composer.lock
-docs/_build/
+version https://git-lfs.github.com/spec/v1
+oid sha256:bae85712f3d1a3a16d3e18d018986eacea74c1f2953fa53a3f5bb99129f2d7ff
+size 51

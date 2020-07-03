@@ -1,21 +1,3 @@
-﻿using ApplicationServices.Interfaces;
-using CookiesBootstrapper;
-using Unity;
-
-namespace ApplicationServices
-{
-    public static class CookieApplicationConfiguration
-    {
-        private static bool _initialised;
-        public static void Initialise()
-        {
-            if (_initialised) return;
-
-            CookiesUnityContainer.Current.RegisterType<ICustomerService, CustomerService>()
-                .RegisterType<IProductService, ProductService>()
-                .RegisterType<IOrderService, OrderService>();
-
-            _initialised = true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1380b916cde8bf35f88d9017b948d6319cc8349f50c416a2d550a65b0326f147
+size 577

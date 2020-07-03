@@ -1,23 +1,3 @@
-﻿using System.Web.Http;
-
-namespace InternationalCookies
-{
-    public static class WebApiConfig
-    {
-        public static void Register(HttpConfiguration config)
-        {
-            // Web API configuration and services
-            // Configure Web API to use only bearer token authentication.
-           
-
-            // Web API routes
-            config.MapHttpAttributeRoutes();
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:458ed233d96f32b9b3070617bcb3d02cb82e0bbfcc35c03e64d36719b6db07a3
+size 616

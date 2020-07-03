@@ -1,33 +1,3 @@
-﻿using System.Web.Http;
-using ApplicationServices.Dto;
-using ApplicationServices.Interfaces;
-using CookiesBootstrapper;
-using Unity;
-
-namespace InternationalCookies.Controllers
-{
-    public class OrderApiController : ApiController
-    {
-        private readonly IOrderService _orderService;
-
-        public OrderApiController()
-        {
-            _orderService = CookiesUnityContainer.Current.Resolve<IOrderService>();
-        }
-
-        /// <summary>
-        /// Place order
-        /// </summary>
-        /// <param name="order"></param>
-        /// <returns></returns>
-
-        [HttpPost]
-        public IHttpActionResult PlaceOrder(OrderDto order)
-        {
-            bool isSuccess = _orderService.PlaceOrder(order);
-
-            return Ok(isSuccess);
-        }
-
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ebf93ceeee4846acb3f7d6750f8b25afca864e9223faf21583253b0d128fbe0
+size 783

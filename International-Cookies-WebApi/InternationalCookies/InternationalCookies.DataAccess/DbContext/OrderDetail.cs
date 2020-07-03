@@ -1,22 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace InternationalCookies.DataAccess.DbContext
-{
-    public class OrderDetail
-    {
-        public int Id { get; set; }
-
-        public int OrderId { get; set; }
-
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
-
-        public virtual Product Product { get; set; }
-
-        public int? Quantity { get; set; }
-        
-        public virtual Order Order { get; set; }
-
-        public decimal Cost { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a932217c677f6928205620ca42e2c2053d8739b702f92d6abef5c0d5fc80908
+size 503

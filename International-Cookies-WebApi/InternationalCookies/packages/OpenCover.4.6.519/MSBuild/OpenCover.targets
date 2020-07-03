@@ -1,10 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-  <PropertyGroup>
-    <OpenCoverMSBuildTasksPath Condition="'$(OpenCoverMSBuildTasksPath)' == ''">$(MSBuildExtensionsPath32)\OpenCover</OpenCoverMSBuildTasksPath>
-    <OpenCoverMSBuildTasksLib>$(OpenCoverMSBuildTasksPath)\OpenCover.MSBuild.dll</OpenCoverMSBuildTasksLib>
-  </PropertyGroup>
-
-  <UsingTask AssemblyFile="$(OpenCoverMSBuildTasksLib)" TaskName="OpenCover.MSBuild.OpenCover" />
-</Project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:663eff7d6bb78634b41a72b76824c77d63096f71259dca4cbe0e39d785b0bbe2
+size 514

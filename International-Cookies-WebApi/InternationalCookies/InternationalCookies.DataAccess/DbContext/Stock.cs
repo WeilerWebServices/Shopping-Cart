@@ -1,22 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace InternationalCookies.DataAccess.DbContext
-{
-    [Table("Stocks")]
-    public class Stock
-    {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //public int Id { get; set; }
-        [Key]
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
-
-        public int? NumberOfItemsAvailable { get; set; }
-
-        public int? NumberOfDefectiveItems { get; set; }
-        
-        public virtual Product Product { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8173023a3749d1f5ac266e30a985a8bdfa9683807e291a9927709e0b256c2e1c
+size 596

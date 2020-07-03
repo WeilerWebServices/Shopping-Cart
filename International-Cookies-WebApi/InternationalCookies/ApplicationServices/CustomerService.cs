@@ -1,35 +1,3 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using ApplicationServices.Dto;
-using ApplicationServices.Interfaces;
-using ApplicationServices.Mapper;
-using InternationalCookies.Domain.Interfaces;
-
-namespace ApplicationServices
-{
-    public class CustomerService : ICustomerService
-    {
-        private readonly ICustomerDomainService _customerDomainService;
-        public CustomerService(ICustomerDomainService customerDomainService)
-        {
-            _customerDomainService = customerDomainService;
-        }
-
-        public bool AddCustomer(CustomerDto customer)
-        {
-
-         return  _customerDomainService.AddCustomer(customer.ToCustomerDomain());
-        }
-
-        public IEnumerable<CustomerDto> GetAllCustomers()
-        {
-           return _customerDomainService.GetAllCustomers().ToList()
-                .Select(x=>x.ToCustomerDto());
-        }
-
-        public CustomerDto GetCustomer(int? id, long? phone)
-        {
-            return _customerDomainService.GetCustomer(id, phone).ToCustomerDto();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d675555213bacd19ca7a7f70553466dd3294d0c83f910bc8bb38a54c56813a9
+size 1049

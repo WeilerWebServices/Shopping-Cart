@@ -1,6 +1,3 @@
-.idea
-.DS_STORE
-coverage
-phpunit.xml
-composer.lock
-vendor/
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3cb7b73238b50a7c22a713020b83cd770f05a0eedb0546add951b434ab9e415
+size 59

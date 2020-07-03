@@ -1,6 +1,3 @@
-/vendor
-/docs
-/tags
-composer.lock
-composer.phar
-*.tgz
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d6fe99beb12451f829468eccc7d3a18df1c053e108067341357cc8aeebbdad8
+size 54

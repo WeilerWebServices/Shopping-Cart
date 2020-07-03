@@ -1,5 +1,3 @@
-composer.lock
-composer.phar
-phpunit.xml
-build/
-vendor/
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d9fa9ac6344a5e368972407ea968d94974192852400823712b37c5057297992
+size 55

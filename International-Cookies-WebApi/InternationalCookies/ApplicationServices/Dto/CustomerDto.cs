@@ -1,19 +1,3 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ApplicationServices.Dto
-{
-    public class CustomerDto
-    {
-         public int CustomerId { get; set; }
-
-        [StringLength(50)]
-        public string Name { get; set; }
-
-        [StringLength(10)]
-        public string Phone { get; set; }
-
-        [StringLength(50)]
-        public string Address { get; set; }
-
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:433b4e0528dce1a790c89bae13d1fa32059089d6d2b338a6bd2ecbf99f7ea3be
+size 385

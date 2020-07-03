@@ -1,12 +1,3 @@
-﻿using System.Linq;
-using InternationalCookies.Domain.Model;
-
-namespace InternationalCookies.Domain.Interfaces
-{
-    public interface IProductDomainService
-    {
-        IQueryable<Product> GetAllProducts();
-        bool UpdateProduct(Product product);
-        bool AddProduct(Product product);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:20681e2fa7e4f06e87c4cc9400a83b5508ba3ca3643979f1e7bc43025dc49a4f
+size 305

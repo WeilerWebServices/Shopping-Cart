@@ -1,24 +1,3 @@
-﻿using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-using System.Web.Routing;
-using ApplicationServices;
-using InternationalCookies.DataAccess;
-using InternationalCookies.Domain;
-
-namespace InternationalCookies
-{
-    public class WebApiApplication : HttpApplication
-    {
-        protected void Application_Start()
-        {
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            CookiesRepositoryConfiguration.Initialise();
-            CookiesDomainConfiguration.Initialise();
-            CookieApplicationConfiguration.Initialise();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a08334fa5b0982542cf7fdd43cacb36c7f418daec7bce49c4f4c615aa161b2e0
+size 769

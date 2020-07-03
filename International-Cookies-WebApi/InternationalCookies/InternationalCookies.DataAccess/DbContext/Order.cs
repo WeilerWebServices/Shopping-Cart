@@ -1,26 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace InternationalCookies.DataAccess.DbContext
-{
-    [Table("Order")]
-    public class Order
-    {
-        [Key]
-        public int Id { get; set; }
-
-        public DateTime? DateOfOrder { get; set; }
-
-        //[ForeignKey("Customer")]
-        public int CustomerId { get; set; }
-        
-
-        public decimal? TotalCost { get; set; }
-
-        public virtual Customer Customer { get; set; }
-        public virtual List<OrderDetail> OrderDetails { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:caf22c660a4f2e2e806a3f80c314ad5fd05467f2426fef428d0d0170568c1bbf
+size 648

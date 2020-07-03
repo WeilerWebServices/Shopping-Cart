@@ -1,23 +1,3 @@
-﻿using ApplicationServices.Dto;
-using ApplicationServices.Interfaces;
-using ApplicationServices.Mapper;
-using InternationalCookies.Domain.Interfaces;
-
-namespace ApplicationServices
-{
-    public class OrderService : IOrderService
-    {
-        private readonly IOrderDomainService _orderDomainService;
-
-        public OrderService(IOrderDomainService orderDomainService)
-        {
-            _orderDomainService = orderDomainService;
-        }
-
-        public bool PlaceOrder(OrderDto order)
-        {
-            var isSuccess = _orderDomainService.PlaceOrder(order.ToOrderDomain());
-            return isSuccess;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2efe1c1cd40797c14d1701c1d4973673a2c4896f993836a4032b742fffc8a6d
+size 635

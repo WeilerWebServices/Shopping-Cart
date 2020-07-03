@@ -1,8 +1,3 @@
-vendor/
-bin/
-build/
-specs/
-phpunit.xml
-phpspec.yml
-tests/info.log
-composer.lock
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1e4a37bde4d997d86ccf24404808e92ed638378c891cef6cbcbcc435d44b48b
+size 80
